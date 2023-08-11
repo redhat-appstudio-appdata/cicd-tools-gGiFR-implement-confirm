@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: cicd-tools
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/ergonzale-tenant/cicd-tools/cicd-tools@sha256:b1f746ba9f405d26dc2bea6577af7e10731ed9dcbef9187bb1000ad953315274
         imagePullPolicy: Always
         name: container-image
         ports:
