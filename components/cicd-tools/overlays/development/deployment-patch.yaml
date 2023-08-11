@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: cicd-tools
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/ergonzale-tenant/cicd-tools/cicd-tools@sha256:b1f746ba9f405d26dc2bea6577af7e10731ed9dcbef9187bb1000ad953315274
+        name: container-image
+        resources: {}
+status: {}

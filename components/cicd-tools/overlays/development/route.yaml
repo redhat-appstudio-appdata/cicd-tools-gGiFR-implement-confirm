@@ -1,0 +1,22 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: cicd-tools
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: cicd-tools
+    app.kubernetes.io/part-of: cicd-tools
+  name: cicd-toolsq5is
+spec:
+  port:
+    targetPort: 8080
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: cicd-tools
+    weight: 100
+status: {}
