@@ -11,7 +11,7 @@ spec:
       creationTimestamp: null
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/ergonzale-tenant/cicd-tools/cicd-tools@sha256:b1f746ba9f405d26dc2bea6577af7e10731ed9dcbef9187bb1000ad953315274
+      - image: quay.io/redhat-user-workloads/ergonzale-tenant/cicd-tools/cicd-tools@sha256:ecf65f827cfeaa5f99539dc5cbe8bccbd4117ffc0eff6dd909a096b7da56704d
         name: container-image
         resources: {}
 status: {}
